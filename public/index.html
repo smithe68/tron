@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.0/socket.io.js"></script>
+    <title>TRON 3/2</title>
+    <!-- Script -->
+    <script src="./client.js" defer></script>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="status">0 - TRON - 0</div>
+    <div id="game">
+        <canvas id="canvas" width="600" height="600"></canvas>
+        <div id="won" hidden>Player 1 Won!</div>
+    </div>
+    <div id="buttons">
+        <button id="find-match-btn" class="blue" onclick="findMatch();">Find a Match</button>
+        <button id="disconnect-btn" class="red" onclick="disconnect();" hidden>Disconnect</button>
+    </div>
+    <div id="crt"></div>
+</body>
+</html>
